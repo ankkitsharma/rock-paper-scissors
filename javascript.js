@@ -26,14 +26,8 @@ function game() {
         computerSelection = getComputerChoice();
         playRound(playerSelection, computerSelection);
     }
-
-    //condition to decide who wins the game
-    if (pwin === cwin)
-        console.log("This game is a draw");
-    else if (pwin > cwin)
-        console.log("Player wins the game");
-    else
-        console.log("Computer wins the game");
+    //The final results:
+    whoWinGame();
 }
     
 //Call this function to play round
@@ -74,4 +68,14 @@ function whoWinRound(name) {
         console.log("Computer wins this round");
     else
         console.log("This round is a draw")
+}
+
+//condition to decide who wins the game
+function whoWinGame() {
+    if (pwin === cwin)
+        console.log("This game is a draw");
+    else if (pwin > cwin)
+        console.log("Player wins the game");
+    else
+        console.log("Computer wins the game");
 }
