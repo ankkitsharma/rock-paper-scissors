@@ -13,28 +13,35 @@
         <h1>Paper</h1>
         <h1>Scissors</h1>
     </div>
-    <div class="pSelection">
-        <p>You have to select betweent the following:</p>
-        <button class="rock">Rock</button>
-        <button class="paper">Paper</button>
-        <button class="scissors">Scissors</button>
+    <div class="left">
+        <div class="pSelection">
+            <p>You have to select betweent the following:</p>
+            <button class="rock">Rock</button>
+            <button class="paper">Paper</button>
+            <button class="scissors">Scissors</button>
+        </div>
+        <div class="selected">
+            <p>Player selection:<span class="pSelected"></span></p>
+            <p>Computer selection:<span class="cSelected"></span></p>
+        </div>
     </div>
-    <div class="selected">
-        <p>Player selection:<span class="pSelected"></span></p>
-        <p>Computer selection:<span class="cSelected"></span></p>
+    <div class="right">
+        <div class="pointTable">
+            <p>Points table:</p>
+            <p>Player:<span class="pPoint"></span></p>
+            <p>Computer:<span class="cPoint"></span></p>
+        </div>
     </div>
-    <div class="pointTable">
-        <p>Points table:</p>
-        <p>Player:<span class="pPoint"></span></p>
-        <p>Computer:<span class="cPoint"></span></p>
+    <div class="bottom">
+        <div class="whoWin">
+            <p>Template for who win round/game</p>
+        </div>
+        <div class="newGame">
+            <p>Start new game?</p>
+            <button>New game</button>
+        </div>
     </div>
-    <div class="whoWin">
-        <p>Template for who win round/game</p>
-    </div>
-    <div class="newGame">
-        <p>Start new game?</p>
-        <button>New game</button>
-    </div>
+    
     <script src="./javascript.js"></script>
 </body>
 </html>
