@@ -10,3 +10,8 @@ body {
     gap: 30px; 
     font-size: 23px;
 }
+
+.center {
+    display: flex;
+    justify-content: space-between;
+}
