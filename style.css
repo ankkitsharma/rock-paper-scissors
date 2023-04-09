@@ -1,6 +1,6 @@
 body {
     background-color: rgb(252, 252, 197);
-    margin: 0 150px 50px;
+    margin: 0 200px 50px;
     font-size: 20px;
     display: flex;
     height: 92vh;
@@ -25,6 +25,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    justify-content: space-between;
 }
 
 .left > p {
