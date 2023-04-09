@@ -48,4 +48,10 @@ body {
 
 button {
     font-size: 16px;
+    background-color: rgb(248, 219, 216);
+    border-color: rgb(156, 87, 75);
+    border-radius: 8px;
+    border-width: 1px;
+    color: #5a201c;
+    padding: 5px;
 }
