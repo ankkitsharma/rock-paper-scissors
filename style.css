@@ -47,6 +47,11 @@ body {
     color: #5a5a3e;
 }
 
+.bold {
+    font-weight: bold;
+    color: rgb(83, 97, 97);
+}
+
 .button {
     display: flex;
     justify-content: space-evenly;
