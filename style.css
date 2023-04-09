@@ -37,3 +37,12 @@ body {
 .left > p {
     font-size: 14px;
 }
+
+.button {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    font-size: 16px;
+}
