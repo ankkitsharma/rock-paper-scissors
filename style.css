@@ -6,6 +6,7 @@ body {
     height: 92vh;
     flex-direction: column;
     justify-content: space-between;
+    color: rgb(65, 59, 59);
 }
 
 .header {
@@ -13,7 +14,7 @@ body {
     justify-content: center;
     gap: 30px; 
     font-size: 23px;
-    color: #7baf7b;
+    color: steelblue;
 }
 
 .center {
@@ -37,6 +38,7 @@ body {
 
 .left > p {
     font-size: 14px;
+    color: #5a5a3e;
 }
 
 .button {
