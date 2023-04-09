@@ -16,10 +16,6 @@ let cwin = 0;
 
 //call this function to start the game
 function game() {
-    console.log("Welcome to the game");
-    //display game number
-    console.log(`Game ${i}`);
-    console.log("Your have to select between rock/paper/scissors");
     playerSelection = (prompt("Enter selection to begin game: ")).toLowerCase();
     computerSelection = getComputerChoice();
     playRound(playerSelection, computerSelection);
