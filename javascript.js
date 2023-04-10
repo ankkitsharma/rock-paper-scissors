@@ -30,6 +30,8 @@ let cPoint = document.querySelector(".cPoint");
 pPoint.textContent = 0;
 cPoint.textContent = 0;
 
+let whoWin = document.querySelector(".whoWin");
+
 //call this function to start the game
 function game(bid) {
     pSelected.textContent = playerSelection = bid;
@@ -81,19 +83,19 @@ function playRound(playerSelection, computerSelection) {
 //call this function to say who wins the round
 function whoWinRound(name) {
     if (name === "player")
-        console.log("Player wins this round");
+        whoWin.textContent = "Player wins this round";
     else if (name === "computer")
-        console.log("Computer wins this round");
+        whoWin.textContent = "Computer wins this round";
     else
-        console.log("This round is a draw")
+        whoWin.textContent = "This round is a draw";
 }
 
 //condition to decide who wins the game
 function whoWinGame() {
     if (pwin === cwin)
-        console.log("This game is a draw");
+        whoWin.textContent = "This game is a draw";
     else if (pwin > cwin)
-        console.log("Player wins the game");
+        whoWin.textContent = "Player wins the game";
     else
-        console.log("Computer wins the game");
+        whoWin.textContent = "Computer wins the game";
 }
