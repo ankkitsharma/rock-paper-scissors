@@ -1,7 +1,7 @@
 body {
     background-color: rgb(252, 252, 197);
     margin: 0 200px 50px;
-    font-size: 20px;
+    font-size: 24px;
     display: flex;
     height: 92vh;
     flex-direction: column;
@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px; 
-    font-size: 23px;
+    font-size: 21px;
     color: steelblue;
 }
 
@@ -62,12 +62,12 @@ body {
 }
 
 button {
-    font-size: 16px;
+    font-size: 17px;
     background-color: rgb(248, 219, 216);
     border-color: rgb(202, 174, 168);
     border-radius: 8px;
     border-width: 1px;
     color: #6d4947;
     font-weight: bold;
-    padding: 5px;
+    padding: 7px;
 }
