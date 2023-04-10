@@ -22,6 +22,9 @@ const sbuttons = document.querySelectorAll(".sbutton");
         })
     })
 
+const pSelected = document.querySelector(".pSelected");
+const cSelected = document.querySelector(".cSelected");
+
 //call this function to start the game
 function game(bid) {
     playerSelection = bid;
