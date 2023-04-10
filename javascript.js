@@ -14,40 +14,51 @@ function getComputerChoice() {
 let pwin = 0;
 let cwin = 0;
 
+const sbuttons = document.querySelectorAll(".sbutton");
+    sbuttons.forEach((button) => {
+        button.addEventListener("click", () => {
+            alert(button.id);
+            game(button.id);
+        })
+    })
+
 //call this function to start the game
-function game() {
-    playerSelection = (prompt("Enter selection to begin game: ")).toLowerCase();
+function game(bid) {
+    playerSelection = bid;
     computerSelection = getComputerChoice();
-    playRound(playerSelection, computerSelection);
-    //The final results:
-    whoWinGame();
+    if(cwin === 5 || pwin === 5) {
+        whoWinGame();
+        alert("Game Over");
+    } else {
+        playRound(playerSelection, computerSelection);
+    }
 }
     
 //Call this function to play round
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection)
         whoWinRound("draw");
-    else if (playerSelection === "rock" && computerSelection == "scissors") {
+    else if (playerSelection === "rock" && computerSelection === "scissors") {
         whoWinRound("player");
         return pwin++;
     }
-    else if (playerSelection === "rock" && computerSelection == "paper") {
+    else if (playerSelection === "rock" && computerSelection === "paper") {
         whoWinRound("computer");
         return cwin++;
     }
-    else if (playerSelection === "scissors" && computerSelection == "rock") {
+    else if (playerSelection === "scissors" && computerSelection === "rock") {
         whoWinRound("computer");
         return cwin++;
     }
-    else if (playerSelection === "scissors" && computerSelection == "paper") {
+    else if (playerSelection === "scissors" && computerSelection === "paper") {
         whoWinRound("player");
         return pwin++;
     }
-    else if (playerSelection === "paper" && computerSelection == "rock") {
+    else if (playerSelection === "paper" && computerSelection === "rock") {
         whoWinRound("player");
         return pwin++;
     }
-    else if (playerSelection === "paper" && computerSelection == "scissors") {
+    else if (playerSelection === "paper" && computerSelection === "scissors") {
         whoWinRound("computer");
         return cwin++;
     }
