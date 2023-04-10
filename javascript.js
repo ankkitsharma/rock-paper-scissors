@@ -17,7 +17,6 @@ let cwin = 0;
 const sbuttons = document.querySelectorAll(".sbutton");
     sbuttons.forEach((button) => {
         button.addEventListener("click", () => {
-            alert(button.id);
             game(button.id);
         })
     })
@@ -45,11 +44,13 @@ nGame.addEventListener("click", () => {
 
 //call this function to start the game
 function game(bid) {
-    pSelected.textContent = playerSelection = bid;
-    cSelected.textContent = computerSelection = getComputerChoice();
+    playerSelection = bid;
+    computerSelection = getComputerChoice();
     if(cwin === 5 || pwin === 5) {
         whoWinGame();
     } else {
+        pSelected.textContent = playerSelection;
+        cSelected.textContent = computerSelection;
         playRound(playerSelection, computerSelection);
     }
 }
