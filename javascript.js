@@ -25,6 +25,11 @@ const sbuttons = document.querySelectorAll(".sbutton");
 let pSelected = document.querySelector(".pSelected");
 let cSelected = document.querySelector(".cSelected");
 
+let pPoint = document.querySelector(".pPoint");
+let cPoint = document.querySelector(".cPoint");
+pPoint.textContent = 0;
+cPoint.textContent = 0;
+
 //call this function to start the game
 function game(bid) {
     pSelected.textContent = playerSelection = bid;
@@ -43,27 +48,33 @@ function playRound(playerSelection, computerSelection) {
         whoWinRound("draw");
     else if (playerSelection === "rock" && computerSelection === "scissors") {
         whoWinRound("player");
-        return pwin++;
+        pPoint.textContent = ++pwin;
+        return pwin;
     }
     else if (playerSelection === "rock" && computerSelection === "paper") {
         whoWinRound("computer");
-        return cwin++;
+        cPoint.textContent = ++cwin;
+        return cwin;
     }
     else if (playerSelection === "scissors" && computerSelection === "rock") {
         whoWinRound("computer");
-        return cwin++;
+        cPoint.textContent = ++cwin;
+        return cwin;
     }
     else if (playerSelection === "scissors" && computerSelection === "paper") {
         whoWinRound("player");
-        return pwin++;
+        pPoint.textContent = ++pwin;
+        return pwin;
     }
     else if (playerSelection === "paper" && computerSelection === "rock") {
         whoWinRound("player");
-        return pwin++;
+        pPoint.textContent = ++pwin;
+        return pwin;
     }
     else if (playerSelection === "paper" && computerSelection === "scissors") {
         whoWinRound("computer");
-        return cwin++;
+        cPoint.textContent = ++cwin;
+        return cwin;
     }
 }
 
