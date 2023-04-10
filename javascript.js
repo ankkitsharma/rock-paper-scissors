@@ -32,13 +32,23 @@ cPoint.textContent = 0;
 
 let whoWin = document.querySelector(".whoWin");
 
+let nGame = document.querySelector(".nGame");
+nGame.addEventListener("click", () => {
+    pSelected.textContent = null;
+    cSelected.textContent = null;
+    pPoint.textContent = 0;
+    cPoint.textContent = 0;
+    whoWin.textContent = null;
+    pwin = 0;
+    cwin = 0;
+})
+
 //call this function to start the game
 function game(bid) {
     pSelected.textContent = playerSelection = bid;
     cSelected.textContent = computerSelection = getComputerChoice();
     if(cwin === 5 || pwin === 5) {
         whoWinGame();
-        alert("Game Over");
     } else {
         playRound(playerSelection, computerSelection);
     }
