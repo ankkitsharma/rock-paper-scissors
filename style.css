@@ -75,3 +75,7 @@ button {
 .nGame {
     padding: 10px;
 }
+
+.newGame > p {
+    font-weight: bold;
+}
