@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(252, 252, 197);
+    background-color: #fcfcc5;
     margin: 0 200px 50px;
     font-size: 24px;
     display: flex;
@@ -63,11 +63,15 @@ body {
 
 button {
     font-size: 17px;
-    background-color: rgb(248, 219, 216);
+    background-color: #f8e8b5;
     border-color: rgb(202, 174, 168);
     border-radius: 8px;
     border-width: 1px;
     color: #6d4947;
     font-weight: bold;
     padding: 7px;
+}
+
+.nGame {
+    padding: 10px;
 }
